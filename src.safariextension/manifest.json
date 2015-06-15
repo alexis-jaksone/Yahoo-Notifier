@@ -1,0 +1,38 @@
+{
+  "name": "Yahoo™ Notifier Pro",
+  "short_name": "fnYahoo",
+  "description": "Yahoo™ Notifier Pro is the easiest way to open Yahoo Mail while you browse internet",
+  "version": "0.2.0",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "storage",
+    "<all_urls>",
+    "webRequest",
+    "notifications",
+    "webRequestBlocking"
+  ],
+  "web_accessible_resources": [],
+  "browser_action": {
+    "default_icon": "data/icons/16.png",
+    "default_popup": "data/content_script/panel.html"
+  },
+  "background": {
+    "page": "lib/chrome/background.html"
+  },
+  "options_page": "data/options/options.html",
+  "content_scripts": [{
+    "matches": [
+     "*://*.m.yahoo.com/*", "*://m.yahoo.com/*",
+     "*://*.mail.yahoo.com/*", "*://mail.yahoo.com/*",
+     "*://*.mg.mail.yahoo.com/*", "*://m.mg.mail.yahoo.com/*"
+    ],
+    "css": ["data/content_script/inject.css"],
+    "all_frames": true
+  }],
+  "icons": {
+    "16": "data/icons/16.png",
+    "48": "data/icons/48.png",
+    "128": "data/icons/128.png"
+  }
+}

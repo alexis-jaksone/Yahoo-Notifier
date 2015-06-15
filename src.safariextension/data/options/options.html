@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Options - Yahoo™ Mail Notifier</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../icons/16.png">
+    <link rel="stylesheet" type="text/css" href="options.css">
+  </head>
+  <body class="flex">
+    <div id="header" class="flex">
+      <div style="">
+        <span>Yahoo™ Mail Notifier</span>
+        <br/>
+        <span class="description">With Yahoo™ Mail Notifier you can easily check your Yahoo Mail Inbox while you browse internet</span>
+      </div>
+    </div>
+    <div id="content" class="flex">
+      <table width="100%">
+        <tr>
+          <td>Adjust Popup Width and Height</td>
+          <td>
+            <span>Popup width is </span><input data-pref="popup.width" type="number" min="330"></input> <span>px</span>.
+            <p class="note">Minimum popup width is 330px.</p>
+            <p class="spacer"></p>
+            <span>Popup height is </span><input data-pref="popup.height" type="number" min="400"></input> <span>px</span>.
+            <p class="note">Minimum popup height is 400px.</p>
+            <p class="spacer"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>Time Interval to Update Badge Icon</td>
+          <td>
+            <span>Check Yahoo Mail Inbox every </span><input data-pref="interval.time" type="number" min="15"></input><span> seconds</span>.
+            <p class="note">Minimum time interval is 15 seconds.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <script type='text/javascript' src="options.js"></script>
+    
+  </body>
+</html>

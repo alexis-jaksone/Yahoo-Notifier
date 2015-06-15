@@ -1,0 +1,25 @@
+{
+  "fullName": "Yahoo™ Notifier Pro",
+  "name": "fnyahoo",
+  "description": "Yahoo™ Notifier Pro is the easiest way to open Yahoo while you browse internet",
+  "id": "jid1-sqmIFwWga4FYBa",
+  "version": "0.2.0",
+  "lib": "lib",
+  "main": "common",
+  "icon": "data/icons/32.png",
+  "icon64": "data/icons/64.png",
+  "permissions": {
+    "private-browsing": true,
+    "cross-domain-content":
+    [
+      "https://fonts.gstatic.com/*"
+    ]
+  },
+  "preferences": [{
+    "name": "openOptions",
+    "title": "Open Options",
+    "label": "Options",
+    "type": "control",
+    "value": "this is the default string value"
+  }]
+}

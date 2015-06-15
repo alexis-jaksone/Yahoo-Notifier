@@ -1,0 +1,20 @@
+div[id="ad-info"],
+div[id="titlebar"],
+div[id="pageFooter"],
+div[class="customAd"],
+div[class*="callout"],
+div[id*="ad-container"],
+div[class*="ad-container"],
+div[class="text-ad-container"],
+div[class="mb-ad-container"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+div[id="compose-edit"] {
+  -webkit-transform: translate3d(0px, 0px, 0px) !important;
+}
+
+[role="button"],[class="submit"] {
+  cursor: pointer !important;
+}
